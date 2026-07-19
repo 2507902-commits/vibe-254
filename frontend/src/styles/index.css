@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #fafafa; color: #1a1a1a; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: #e6004c; color: white; }
+.navbar .brand { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; }
+.nav-links { display: flex; gap: 1rem; align-items: center; }
+.nav-links a, .nav-links button { color: white; text-decoration: none; background: none; border: none; font-size: 0.95rem; cursor: pointer; }
+.auth-page, .discover-page, .matches-page, .profile-page, .subscription-page, .chat-room { max-width: 480px; margin: 2rem auto; padding: 1rem; }
+.auth-page form, .subscription-page form { display: flex; flex-direction: column; gap: 0.75rem; }
+input, select, textarea, button { padding: 0.6rem; border-radius: 8px; border: 1px solid #ddd; font-size: 1rem; }
+button { background: #e6004c; color: white; border: none; cursor: pointer; }
+.swipe-card { border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background: white; padding: 1rem; }
+.swipe-card img { width: 100%; border-radius: 12px; aspect-ratio: 3/4; object-fit: cover; }
+.swipe-actions { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
+.swipe-actions .skip { background: #ccc; }
+.match-popup { position: fixed; inset: 0; background: rgba(230,0,76,0.95); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.chat-room .messages { height: 60vh; overflow-y: auto; display: flex; flex-direction: column; gap: 0.5rem; }
+.chat-room .message { background: #f0f0f0; padding: 0.5rem 0.8rem; border-radius: 12px; align-self: flex-start; }
+.chat-input { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.chat-input input { flex: 1; }
+.premium-badge { color: #e6004c; font-weight: 700; }
+.error { color: #c00; }
+.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 1rem 0; }
+.photo-thumb { position: relative; aspect-ratio: 3/4; }
+.photo-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.photo-thumb button { position: absolute; top: 4px; right: 4px; background: rgba(0,0,0,0.6); border-radius: 50%; width: 24px; height: 24px; padding: 0; line-height: 1; }
+.upload-btn { display: inline-block; background: #e6004c; color: white; padding: 0.6rem 1rem; border-radius: 8px; cursor: pointer; margin-bottom: 1rem; }
